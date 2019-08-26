@@ -33,5 +33,23 @@ gem install watir //install watir
 gem install watir-performance //install watir perfomance
 ```
 
+## Run Watir code
+
+```
+Check dùm anh ruby đang chạy là nào?
+ruby -v
+
+Nếu ra ruby 2.6.3 là đúng
+
+Nếu sai thì chạy:
+cài ruby theo những bước install.
+Nếu Đúng thì làm tiếp:
+
+cd watir
+ruby 1_watir.rb
+
+nếu nó mở ra trang google là đúng nhé.
+
+```
 
 
