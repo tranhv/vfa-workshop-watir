@@ -24,13 +24,16 @@ rbenv global 2.6.3 // set ruby version for this computer
 
 
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >>~/.bash_profile
-echo eval "$(rbenv init -)" >>~/.bash_profile
+echo 'eval "$(rbenv init -)"' >>~/.bash_profile
 source ~/.bash_profile
 
 ruby -v
 
 gem install watir //install watir
 gem install watir-performance //install watir perfomance
+
+#install browser driver
+brew cask install chromedriver
 ```
 
 ## Run Watir code
@@ -49,6 +52,7 @@ cd watir
 ruby 1_watir.rb
 
 nếu nó mở ra trang google là đúng nhé.
+
 
 ```
 
