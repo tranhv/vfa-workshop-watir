@@ -33,7 +33,7 @@ gem install watir //install watir
 gem install watir-performance //install watir perfomance
 
 #install browser driver
-brew cask install chromedriver
+gem install webdrivers
 ```
 
 ## Run Watir code
@@ -52,7 +52,6 @@ cd watir
 ruby 1_watir.rb
 
 nếu nó mở ra trang google là đúng nhé.
-
 
 ```
 
