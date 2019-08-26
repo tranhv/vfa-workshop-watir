@@ -30,5 +30,8 @@ source ~/.bash_profile
 ruby -v
 
 gem install watir //install watir
+gem install watir-performance //install watir perfomance
 ```
+
+
 
