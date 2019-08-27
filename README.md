@@ -34,6 +34,9 @@ gem install watir-performance //install watir perfomance
 
 #install browser driver
 gem install webdrivers
+
+#install mini test
+gem install minitest
 ```
 
 ## Run Watir code
