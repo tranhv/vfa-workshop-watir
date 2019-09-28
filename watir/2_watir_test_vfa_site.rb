@@ -1,5 +1,7 @@
 require 'minitest/autorun'
 require 'watir'
+require "csv"
+
 class GoogleHomePage <MiniTest::Unit::TestCase
   def test_there_should_be_text_Gmail
     browser = Watir::Browser.new
@@ -12,5 +14,9 @@ class GoogleHomePage <MiniTest::Unit::TestCase
     assert(browser.text.include?("HI! WE ARE"))
     assert(browser.text.include?("VITALIFY ASIA!"))
     assert(browser.text.include?("224A-224B Dien Bien Phu Street, Ward 7, District 3, HCM city"))
+    CSV.open("file.csv", "wb") do |csv|
+      csv << ["animal", "count", "price"]
+      csv << ["fox", "1", "$90.00"]
+    end
   end
 end
