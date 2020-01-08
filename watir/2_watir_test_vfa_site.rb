@@ -1,9 +1,8 @@
 require 'minitest/autorun'
 require 'watir'
-require "csv"
-
-class GoogleHomePage <MiniTest::Unit::TestCase
+class GoogleHomePage < UnitTest::Unit::TestCase
   def test_there_should_be_text_Gmail
+   
     browser = Watir::Browser.new
     browser.goto("https://vitalify.asia/")
     browser.screenshot.save '2_home.png'
