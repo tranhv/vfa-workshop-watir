@@ -13,7 +13,7 @@ users.each_with_index do |user, index|
   browser.text_field(type: "email").set(user["user"]) 
   browser.text_field(type: "password").set(user["password"]) 
   browser.button(type: "button").click 
-  sleep(2)
+  sleep(3)
   browser.buttons({type: "button"}).each_with_index do |b, index|
     #index: 4: checkin
     #index: 5: checkout
@@ -30,6 +30,7 @@ users.each_with_index do |user, index|
     end
   end
   puts 'Checkout already for:' + user['user'];
+  sleep(3)
   # browser.screenshot.save '4_home_after_click.png' 
 end
 browser.close
