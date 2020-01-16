@@ -5,7 +5,8 @@ browser = Watir::Browser.new
 users = [
   {"user" => 'tranhv@vitalify.asia', "password" => '11111111'},
   {"user" => 'nhintt@vitalify.asia', "password" => '123456'},
-  {"user" => 'bichdt@vitalify.asia', "password" => '123456'}
+  {"user" => 'bichdt@vitalify.asia', "password" => '123456'},
+  {"user" => 'trucldt@vitalify.asia', "password" => '123456'}
 ]
 users.each_with_index do |user, index|
   browser.goto("http://hrm.vitalify.asia/user/login?redirectFrom=%2Fhome")
